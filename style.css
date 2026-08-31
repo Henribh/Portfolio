@@ -1,25 +1,65 @@
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
 body {
-   background-color: rgb(250, 253, 252);
-}
-.info {
- display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.contato {
-
-   color: rgb(103, 103, 223);
-   
-}
-.mim {
-   
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bold; color: blue;
+   font-family: 'Times New Roman', Times, serif;
+   background-color: #C4E7FF;
+   margin-left: 25px;
+   margin-right: 150px;
+   padding-top: 50px;
 }
 
-.eu{
-   color: rgb(101, 101, 230);
+body h1, h2, h3, h4 {
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.sobre {
-font-family: 'Times New Roman', Times, serif;
+
+body p {
+font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+body a {
+   text-transform: uppercase;
+   text-decoration: none;
+   color:black;
+
+}
+
+body a:hover {
+   text-decoration: underline;
+   color: rgb(167, 76, 76);
+   font-weight: bold;
+   
+}
+
+#aprese { 
+margin-bottom: 20px;
+padding-top: 60px;
+text-align: center;
+}
+
+#sobre {
+margin: 20px;
+padding-top: 20px
+}
+
+#habil {
+margin-top: 20px;
+padding-top: 20px;
+}
+
+header {
+padding: 20px 0px;
+position: fixed;
+width: 100%;
+background-color: #BBDDFF;
+}
+.contatos {
+   margin-top: 20px;
+   padding-top: 5px;
+}
+
+footer {
+background-color:#BBDDFF;
 }
