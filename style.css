@@ -4,19 +4,20 @@
 }
 
 body {
-   font-family: 'Times New Roman', Times, serif;
-   background-color: #a5dbff;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   background-color: whitesmoke;
    margin-left: 25px;
    margin-right: 150px;
    padding-top: 50px;
 }
 
 body h1, h2, h3, h4 {
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: bold;
 }
 
 body p {
-font-family:Georgia, 'Times New Roman', Times, serif
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body a {
@@ -51,13 +52,14 @@ padding-top: 20px;
 
 #habil ul {
    list-style-type: none;
+   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
 padding: 20px 0px;
-position: fixed;
+position: absolute;
 width: 100%;
-background-color: red;
+background-color: rgba(12, 18, 181, 0.305);
 }
 .contatos {
    margin-top: 20px;
@@ -65,12 +67,12 @@ background-color: red;
 }
 
 footer {
-background-color:#BBDDFF;
+background-color:(12, 18, 181, 0.305);
 }
 .icone {
    width: 60px;
    height: 50px;
-   fill: red;
+   fill: rgb(12, 18, 181, 0.305);
 }
 
 footer ul {
