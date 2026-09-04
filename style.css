@@ -8,12 +8,12 @@ body {
    background-color: whitesmoke;
    margin-left: 15px;
    margin-right: 150px;
-   padding-top: 20px;
+   padding-top: 15px;
 }
 
 body h1, h2, h3, h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: bold;
+  font-weight: bold;
 }
 
 body p {
@@ -35,9 +35,13 @@ body a:hover {
 }
 
 #aprese { 
-margin-bottom: 20px;
-padding-top: 60px;
-text-align: center;
+    margin-bottom: 15px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 30px;
 }
 
 #sobre {
@@ -56,18 +60,22 @@ padding-top: 20px;
 }
 
 header {
-padding: 20px 0px;
+padding: 20px 20px;
 position: absolute;
 width: 100%;
 background-color: rgba(12, 18, 181, 0.305);
 }
 .contatos {
-   margin-top: 20px;
+   margin-top: 10px;
    padding-top: 5px;
+   text-align: center;
+   
 }
 
 footer {
 background-color:(12, 18, 181, 0.305);
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
 }
 .icone {
    width: 60px;
@@ -80,3 +88,18 @@ footer ul {
    justify-content: space-around;
    list-style-type: none;
 }
+
+.aprese-texto {
+   text-align: left;
+}
+
+.Soft {
+text-align: right;
+}
+.Hard {
+   text-align: center;
+   
+}
+.container-habilidades {
+  }
+
