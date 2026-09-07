@@ -81,6 +81,7 @@ background-color: rgba(222, 18, 42, 0);
    margin-top: 10px;
    padding-top: 5px;
    text-align: center;
+   color: #ffffff
    
 }
 
@@ -126,4 +127,5 @@ footer ul {
 .contatos a { 
   display: inline-block;
   animation: flutuar 3s ease-in-out infinite;
+  color:#ffffff
 }
