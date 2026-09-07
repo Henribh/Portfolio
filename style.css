@@ -13,7 +13,7 @@ body {
    margin-left: 15px;
    margin-right: 10px;
    padding-top: 15px;
-   color: white;
+   color: rgba(255, 255, 255, 0.673);
 }
 
 @keyframes moverFundo {
@@ -34,7 +34,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 body a {
    text-transform: uppercase;
    text-decoration: none;
-   color: white;
+   color: rgba(222, 18, 42, 0.571);
 
 }
 
@@ -42,7 +42,6 @@ body a:hover {
    text-decoration: underline;
    color: rgba(188, 42, 42, 0.575);
    font-weight: bold;
-   
 }
 
 #aprese { 
@@ -57,7 +56,8 @@ body a:hover {
 
 #sobre {
 margin: 20px;
-padding-top: 20px
+padding-top: 20px;
+text-align: center;
 }
 
 #habil {
@@ -92,7 +92,7 @@ font-family: Arial, Helvetica, sans-serif;
 .icone {
    width: 60px;
    height: 50px;
-   fill: rgba(222, 18, 42, 0.355);
+   fill: rgba(222, 18, 42, 0.571);
 }
 
 footer ul {
@@ -104,7 +104,7 @@ footer ul {
 .container {
    display: flex;
    gap: 80px 40px;
-   height: 200px;
+   height: auto;
    justify-content: center;
    
    
@@ -112,7 +112,18 @@ footer ul {
 
 .item{
    width: 500px;
-   height: 200px;
+   height: auto;
    background-color: rgba(0, 38, 252, 0);
    box-sizing: border-box;
+}
+
+@keyframes flutuar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.contatos a { 
+  display: inline-block;
+  animation: flutuar 3s ease-in-out infinite;
 }
