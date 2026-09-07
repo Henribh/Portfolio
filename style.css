@@ -1,7 +1,7 @@
 * {
    margin: 0px;
    padding: 0px;
-
+   box-sizing: border-box;
 }
 
 body {
@@ -10,17 +10,16 @@ body {
    background-size: cover;
    background-repeat: repeat;
    animation: moverFundo 60s linear infinite;
-   margin-left: 15px;
-   margin-right: 10px;
    padding-top: 15px;
+   padding-left: 15px;
+   padding-right: 10px;
    color: rgba(255, 255, 255, 0.673);
 }
 
 @keyframes moverFundo {
    from { background-position: 0 0; }
    to { background-position: 500px 500px; }
-   }
-
+}
 
 body h1, h2, h3, h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -28,20 +27,37 @@ body h1, h2, h3, h4 {
 }
 
 body p {
-font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body a {
    text-transform: uppercase;
    text-decoration: none;
    color: rgba(222, 18, 42, 0.571);
-
 }
 
 body a:hover {
    text-decoration: underline;
    color: rgba(188, 42, 42, 0.575);
    font-weight: bold;
+}
+
+header {
+   padding: 20px 20px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: transparent;
+   display: flex;
+   gap: 20px;
+}
+
+.foto-perfil {
+   width: 335px;
+   height: 335px;
+   border-radius: 50%;
+   object-fit: cover;
 }
 
 #aprese { 
@@ -55,15 +71,15 @@ body a:hover {
 }
 
 #sobre {
-margin: 20px;
-padding-top: 20px;
-text-align: center;
+   margin: 20px;
+   padding-top: 20px;
+   text-align: center;
 }
 
 #habil {
-margin-top: 20px;
-padding-top: 20px;
-text-align: center;
+   margin-top: 20px;
+   padding-top: 20px;
+   text-align: center;
 }
 
 #habil ul {
@@ -71,51 +87,25 @@ text-align: center;
    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-header {
-padding: 20px 20px;
-position: absolute;
-width: 100%;
-background-color: rgba(222, 18, 42, 0);
-}
-.contatos {
-   margin-top: 10px;
-   padding-top: 5px;
-   text-align: center;
-   color: #ffffff
-   
-}
-
-footer {
-background-color:(12, 18, 181, 0.305);
-text-align: center;
-font-family: Arial, Helvetica, sans-serif;
-}
-.icone {
-   width: 60px;
-   height: 50px;
-   fill: rgba(222, 18, 42, 0.571);
-}
-
-footer ul {
-   display: flex;
-   justify-content: space-around;
-   list-style-type: none;
-}
-
 .container {
    display: flex;
    gap: 80px 40px;
    height: auto;
    justify-content: center;
-   
-   
 }
 
-.item{
+.item {
    width: 500px;
+   max-width: 100%;
    height: auto;
-   background-color: rgba(0, 38, 252, 0);
    box-sizing: border-box;
+}
+
+.contatos {
+   margin-top: 10px;
+   padding-top: 5px;
+   text-align: center;
+   color: #ffffff;
 }
 
 @keyframes flutuar {
@@ -127,5 +117,59 @@ footer ul {
 .contatos a { 
   display: inline-block;
   animation: flutuar 3s ease-in-out infinite;
-  color:#ffffff
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+/* Forçar a renderização e o preenchimento correto do SVG */
+.icone {
+   width: 50px;
+   height: 50px;
+   fill: rgba(222, 18, 42, 0.85);
+   display: inline-block;
+   vertical-align: middle;
+}
+
+footer {
+   background-color: rgba(12, 18, 181, 0.305);
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 10px 0;
+}
+
+/* =========================================
+   MEDIA QUERY: Ajustes para Celular (Mobile)
+   ========================================= */
+@media screen and (max-width: 768px) {
+  header {
+    position: relative;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  #aprese {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .foto-perfil {
+    width: 200px;
+    height: 200px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .item {
+    width: 100%;
+  }
+
+  .icone {
+    width: 40px;
+    height: 40px;
+  }
 }
