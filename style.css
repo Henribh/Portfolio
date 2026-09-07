@@ -117,11 +117,12 @@ header {
 .contatos a { 
   display: inline-block;
   animation: flutuar 3s ease-in-out infinite;
-  color: #ffffff;
+  height: auto;
   margin: 0 10px;
+  width: 50px;
+  height: 50px;
 }
 
-/* Forçar a renderização e o preenchimento correto do SVG */
 .icone {
    width: 50px;
    height: 50px;
@@ -137,9 +138,6 @@ footer {
    padding: 10px 0;
 }
 
-/* =========================================
-   MEDIA QUERY: Ajustes para Celular (Mobile)
-   ========================================= */
 @media screen and (max-width: 768px) {
   header {
     position: relative;
