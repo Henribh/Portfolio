@@ -2,43 +2,48 @@
    margin: 0px;
    padding: 0px;
    box-sizing: border-box;
+   color: #ffffffb6;
 }
 
-body {
-   font-family: Georgia, 'Times New Roman', Times, serif;
+/* Nova camada do fundo animado */
+.bg-animado {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 200%;
+   height: 200%;
    background-image: url("assets/pexels-frank-cone-140140-3214110.jpg");
    background-size: cover;
    background-repeat: repeat;
-   animation: moverFundo 60s linear infinite;
-   padding-top: 15px;
-   padding-left: 15px;
-   padding-right: 10px;
-   color: rgba(255, 255, 255, 0.673);
+   z-index: -1;
+   animation: moverFundoOtimizado 60s linear infinite;
+   will-change: transform;
 }
-
-@keyframes moverFundo {
-   from { background-position: 0 0; }
-   to { background-position: 500px 500px; }
-}
+@keyframes moverFundoOtimizado {
+   from { transform: translate3d(0, 0, 0); }
+   to { transform: translate3d(-250px, -250px, 0); }}
 
 body h1, h2, h3, h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
-}
+  color: #ffffffb6;}
 
 body p {
   font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #ffffffb6;
+  
 }
 
 body a {
    text-transform: uppercase;
    text-decoration: none;
-   color: rgba(222, 18, 42, 0.571);
+   color: #ffffffb6;
+   font-family:'Times New Roman', Times, serif;
+   font-weight: bold;
 }
 
 body a:hover {
    text-decoration: underline;
-   color: rgba(188, 42, 42, 0.575);
    font-weight: bold;
 }
 
@@ -105,7 +110,7 @@ header {
    margin-top: 10px;
    padding-top: 5px;
    text-align: center;
-   color: #ffffff;
+   color: #ffffffb6;
 }
 
 @keyframes flutuar {
@@ -126,13 +131,12 @@ header {
 .icone {
    width: 50px;
    height: 50px;
-   fill: rgba(222, 18, 42, 0.85);
    display: inline-block;
    vertical-align: middle;
+   object-fit: contain; /* Garante que o ícone mantenha as proporções corretas */
 }
 
 footer {
-   background-color: rgba(12, 18, 181, 0.305);
    text-align: center;
    font-family: Arial, Helvetica, sans-serif;
    padding: 10px 0;
@@ -166,7 +170,7 @@ footer {
     width: 100%;
   }
 
-  .icone {
+.icone {
     width: 40px;
     height: 40px;
   }
