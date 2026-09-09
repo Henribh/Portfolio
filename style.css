@@ -4,8 +4,6 @@
    box-sizing: border-box;
    color: #ffffffb6;
 }
-
-/* Nova camada do fundo animado */
 .bg-animado {
    position: fixed;
    top: 0;
@@ -31,9 +29,7 @@ body h1, h2, h3, h4 {
 body p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #ffffffb6;
-  
 }
-
 body a {
    text-transform: uppercase;
    text-decoration: none;
@@ -41,12 +37,10 @@ body a {
    font-family:'Times New Roman', Times, serif;
    font-weight: bold;
 }
-
 body a:hover {
    text-decoration: underline;
    font-weight: bold;
 }
-
 header {
    padding: 20px 20px;
    position: absolute;
@@ -57,14 +51,12 @@ header {
    display: flex;
    gap: 20px;
 }
-
 .foto-perfil {
    width: 335px;
    height: 335px;
    border-radius: 50%;
    object-fit: cover;
 }
-
 #aprese { 
     margin-bottom: 15px;
     padding-top: 80px;
@@ -74,51 +66,43 @@ header {
     justify-content: flex-start; 
     gap: 30px;
 }
-
 #sobre {
    margin: 20px;
    padding-top: 20px;
    text-align: center;
 }
-
 #habil {
    margin-top: 20px;
    padding-top: 20px;
    text-align: center;
 }
-
 #habil ul {
    list-style-type: none;
    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 .container {
    display: flex;
    gap: 80px 40px;
    height: auto;
    justify-content: center;
 }
-
 .item {
    width: 500px;
    max-width: 100%;
    height: auto;
    box-sizing: border-box;
 }
-
 .contatos {
    margin-top: 10px;
    padding-top: 5px;
    text-align: center;
    color: #ffffffb6;
 }
-
 @keyframes flutuar {
   0% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0); }
 }
-
 .contatos a { 
   display: inline-block;
   animation: flutuar 3s ease-in-out infinite;
@@ -127,7 +111,6 @@ header {
   width: 50px;
   height: 50px;
 }
-
 .icone {
    width: 50px;
    height: 50px;
@@ -135,41 +118,34 @@ header {
    vertical-align: middle;
    object-fit: contain; /* Garante que o ícone mantenha as proporções corretas */
 }
-
 footer {
    text-align: center;
    font-family: Arial, Helvetica, sans-serif;
    padding: 10px 0;
 }
-
 @media screen and (max-width: 768px) {
   header {
     position: relative;
     justify-content: center;
     padding: 10px 0;
   }
-
   #aprese {
     flex-direction: column;
     text-align: center;
     padding-top: 20px;
   }
-
   .foto-perfil {
     width: 200px;
     height: 200px;
   }
-
   .container {
     flex-direction: column;
     align-items: center;
     gap: 30px;
   }
-
   .item {
     width: 100%;
   }
-
 .icone {
     width: 40px;
     height: 40px;
